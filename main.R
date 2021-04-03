@@ -39,17 +39,58 @@ covidRN <- covidRN %>%
 covidPAAS <- covidRN %>%
   filter(stringr::str_detect(city,"parelhas/rn"))
 
+#separacao ano de 2020 parelhas
 
-#separação dados mes de marco 2021
+covidPAAS2020 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2020"))
+
+#separacao ano de 2021 parelhas
+
+covidPAAS2021 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2021"))
+
+#separacao dados mes de marco 2021
 
 paasMarco21 <- covidPAAS %>%
   filter(stringr::str_detect(date,"2021-03"))
+
+#separacao dados mes de marco 2020
+
+paasfev21 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2021-02"))
+
+#criacao dos graficos
+
+#grafico geral parelhas
+
+ggplot(covidPAAS,aes(x=date,y=newCases)) + geom_line()
+
+#mesmo grafico em barras
+
+ggplot(covidPAAS,aes(x=date,y=newCases)) + geom_bar(stat = "identity")
+
+#grafico casos totais parelhas
+
+ggplot(covidPAAS,aes(x=date,y=totalCases)) + geom_bar(stat = "identity")
+
+#grafico ano de 2020 parelhas
+
+ggplot(covidPAAS2020,aes(x=date,y=newCases)) + geom_line()
+
+#grafico ano de 2021 parelhas
+
+ggplot(covidPAAS2021,aes(x=date,y=newCases)) +geom_line()
+
+#criacao grafico em linha novos casos mes de fevereiro 2021 parelhas
+
+ggplot(paasfev21, aes(x =date,y= newCases)) + geom_line()
 
 #criacao grafico em linha de novos casos mes de marco 2021 parelhas
 
 ggplot(paasMarco21, aes(x =date,y= newCases)) + geom_line()
 
 #mesmo grafico em barras
+
 #ggplot(paasMarco21, aes(x =date,y= newCases)) + geom_bar(stat = "identity")
 
 
@@ -59,19 +100,3 @@ ggplot(paasMarco21, aes(x =date,y= newDeaths)) + geom_line()
 #criacao grafico novos casos nacional
 ggplot(covidNacional,aes(x=date,y=newCases))+geom_bar(stat = "identity")
 
-
-#juncao novos casos e mortes marco 2021 parelhas
-plot(x = paasMarco21$date,  # Eixo X com a data
-     y = paasMarco21$newCases)  # Eixo Y com novos casos
-
-#em vermelho linha referente a novos casos
-lines(x = paasMarco21$date,
-      y = paasMarco21$newCases,
-      col = "red")
-# Venda de sorvetes que havia sido estimada
-#estimativaSorvete <- c(150, 290, 370, 410, 503)
-
-# Adiciona linha entre os pontos
-lines(x = paasMarco21$date,
-      y = paasMarco21$newDeaths,
-      col = "blue")
