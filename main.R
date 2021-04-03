@@ -1,3 +1,4 @@
+
 #essa analise utiliza o pacote tydiverse caso não o tenha instalado
 #execute a linha abaixo
 #install.packages("tidyverse")
@@ -99,4 +100,6 @@ ggplot(paasMarco21, aes(x =date,y= newDeaths)) + geom_line()
 
 #criacao grafico novos casos nacional
 ggplot(covidNacional,aes(x=date,y=newCases))+geom_bar(stat = "identity")
+
+
 
