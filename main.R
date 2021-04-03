@@ -11,7 +11,14 @@ library(readr)
 #os dados estao disponiveis no repositorio covid19br de wcota 
 #nessa analise sao utilizados os dados do inicio da pandemia ate 02/04/2021
 
-covidNacional <- read_csv("cases-brazil-cities-time.csv")
+#arquivo com tamanho superior ao aceito pelo git, baixe a 
+#versao mais recente no repositorio do wcota (https://github.com/wcota/covid19br)
+#o arquivo esta como um .gz 'cases-brazil-cities-time.csv.gz'(https://github.com/wcota/covid19br/blob/master/cases-brazil-cities-time.csv.gz) apos o download
+#descompacte e mova para a pasta do repositorio
+
+#importacao dos dados nacionais a partir do arquivo baixado
+
+covidNacional <- read_csv("cases-brazil-cities-time.csv") 
 
 #regulacao dos dados para remover atualizacoes de casos negativas
 #casos negativos foram substituidos por 0
@@ -31,6 +38,7 @@ covidRN <- covidRN %>%
 
 covidPAAS <- covidRN %>%
   filter(stringr::str_detect(city,"parelhas/rn"))
+
 
 #separação dados mes de marco 2021
 
