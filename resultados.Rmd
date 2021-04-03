@@ -7,24 +7,65 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
+## Sobre os resultados
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+Durante esta analise serão exibidos os graficos referentes aos novos casos e mortes, casos totais e mortes totais ocorridos no municipio de Parelhas/RN em decorrência do COVID-19. Havera enfase no mês de março de 2021 onde houve um grande crescimento de ocorrencias bem como no inicio do ano de 2021.
+### Sobre a fonte dos dados
 
-## Including Code
+Todos os dados utilizados foram obtidos do repositorio [Covid19br](https://github.com/wcota/covid19br), o repositorio reune dados das Secretarias Estaduais de Saúde e do Ministerio da Saúde.
 
-You can include R code in the document as follows:
+## Graficos referentes ao periodo do inicio da pandemia ate 03/04/2021
+```{r, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(readr)
+#importacao dos dados nacionais a partir do arquivo baixado
 
-```{r cars}
-summary(cars)
+covidNacional <- read_csv("cases-brazil-cities-time.csv") 
+
+#regulacao dos dados para remover atualizacoes de casos negativas
+#casos negativos foram substituidos por 0
+
+covidNacional <- covidNacional %>%
+  mutate_if(is.numeric,function(x){x[x < 0 ] <- 0;x})
+
+#separacao dos dados do estado do Rio grande do Norte
+
+covidRN <- covidNacional %>%
+  filter(stringr::str_detect(state,"RN"))
+
+covidRN <- covidRN %>%
+  mutate(city=tolower(iconv(city,from="UTF-8",to="ASCII//TRANSLIT")))
+
+#separacao dos dados do municipio de parelhas
+
+covidPAAS <- covidRN %>%
+  filter(stringr::str_detect(city,"parelhas/rn"))
+
+#separacao ano de 2020 parelhas
+
+covidPAAS2020 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2020"))
+
+#separacao ano de 2021 parelhas
+
+covidPAAS2021 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2021"))
+
+#separacao dados mes de marco 2021
+
+paasMarco21 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2021-03"))
+
+#separacao dados mes de marco 2020
+
+paasfev21 <- covidPAAS %>%
+  filter(stringr::str_detect(date,"2021-02"))
+```
+A seguir temos o grafico dos casos acumulados ao longo de todo o periodo de pandemia. Podemos notar um crescimento significativo a partir do fim do ano de 2020 se prolongando durante os messes iniciais de 2021
+```{r covidPAAS, echo=FALSE}
+ggplot(covidPAAS,aes(x=date,y=totalCases)) + geom_bar(stat = "identity")
 ```
 
-## Including Plots
+Figura 01: Grafico de casos acumulados durante o periodo de pandemia em Parelhas/RN
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

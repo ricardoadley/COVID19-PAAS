@@ -74,6 +74,16 @@ ggplot(covidPAAS,aes(x=date,y=newCases)) + geom_bar(stat = "identity")
 
 ggplot(covidPAAS,aes(x=date,y=totalCases)) + geom_bar(stat = "identity")
 
+
+#grafico casos totais para o ano de 2021
+
+ggplot(covidPAAS2021,aes(x=date,y=totalCases))+geom_bar(stat = "identity")
+
+#grafico casos totais para o ano de 2020
+
+ggplot(covidPAAS2020,aes(x=date,y=totalCases))+geom_bar(stat = "identity")
+
+
 #grafico ano de 2020 parelhas
 
 ggplot(covidPAAS2020,aes(x=date,y=newCases)) + geom_line()
@@ -96,7 +106,7 @@ ggplot(paasMarco21, aes(x =date,y= newCases)) + geom_line()
 
 
 #criacao grafico em linha de novas mortes mes de marco 2021 parelhas
-ggplot(paasMarco21, aes(x =date,y= newDeaths)) + geom_line()
+ggplot(paasMarco21, aes(x = date,y = newDeaths)) + geom_line()
 
 #criacao grafico novos casos nacional
 ggplot(covidNacional,aes(x=date,y=newCases))+geom_bar(stat = "identity")
