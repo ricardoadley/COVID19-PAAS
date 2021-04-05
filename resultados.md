@@ -3,30 +3,30 @@ COVID-19 EM PARELHAS RN
 
 ## Sobre os resultados
 
-Durante esta análise serão exibidos os gráficos referentes aos novos
+Durante esta análise, serão exibidos os gráficos referentes aos novos
 casos e mortes, casos totais e mortes totais ocorridos no município de
-Parelhas/RN em decorrência do COVID-19. Haverá ênfase no mês de março de
-2021 onde houve um grande crescimento de ocorrências bem como no início
-do ano de 2021.
+Parelhas/RN, em decorrência da COVID-19. Haverá ênfase no mês de março
+de 2021, onde houve um grande crescimento de ocorrências, bem como no
+início do ano de 2021.
 
 ### Sobre a fonte dos dados
 
 Todos os dados utilizados foram obtidos do repositório
-[Covid19br](https://github.com/wcota/covid19br), o repositório reúne
+[Covid19br](https://github.com/wcota/covid19br).O repositório reúne
 dados das Secretarias Estaduais de Saúde e do Ministério da Saúde.
 
 ## Gráficos referentes ao periodo do inicio da pandemia ate 03/04/2021
 
-A seguir temos o gráfico dos casos acumulados ao longo de todo o período
-de pandemia. Podemos notar um crescimento significativo a partir do fim
-do ano de 2020 se prolongando durante os meses iniciais de 2021.
+A seguir, temos o gráfico dos casos acumulados ao longo de todo o
+período de pandemia. Podemos notar um crescimento significativo a partir
+do fim do ano de 2020, se prolongando durante os meses iniciais de 2021.
 
 > Gráfico 01: Casos acumulados durante o período de pandemia em
 > Parelhas/RN até 03/04/2021
 
 ![](resultados_files/figure-gfm/casosTotaisParelhas-1.png)<!-- -->
 
-A seguir temos o gráfico do acumulo de mortes causadas por COVID-19
+A seguir, temos o gráfico do acumulo de mortes causadas por COVID-19
 durante o ano de 2020 até 03/04/2021.
 
 > Gráfico 02: Óbitos acumulados durante o período de pandemia em
@@ -35,8 +35,8 @@ durante o ano de 2020 até 03/04/2021.
 ![](resultados_files/figure-gfm/ObitosTotaisParelhas-1.png)<!-- -->
 
 É possível notar um crescimento considerável de vítimas no mês de março
-de 2021.No próximo gráfico podemos ver a frequência de novos casos no
-município de parelhas durante todo o período da pandemia até 03/04/2021.
+de 2021.No próximo gráfico, podemos ver a frequência de novos casos no
+município de Parelhas durante todo o período da pandemia até 03/04/2021.
 
 > Gráfico 03: Novos casos durante o período da pandemia em Parelhas/RN
 
@@ -44,8 +44,8 @@ município de parelhas durante todo o período da pandemia até 03/04/2021.
 
 Podemos notar que o ano de 2021, apesar de ainda estar no seu primeiro
 semestre, apresenta uma frequência de casos superior a todo o ano de
-2020. A seguir é mostrado o recorte do gráfico por anos, sendo os novos
-casos durante 2020 e os novos casos durante o período de 01/01 a 03/04
+2020. A seguir, é mostrado o recorte do gráfico por anos, sendo os novos
+casos durante 2020, e os novos casos durante o período de 01/01 a 03/04
 de 2021.
 
 > Gráfico 04: Novos casos durante o período da pandemia no ano de 2020
@@ -53,8 +53,8 @@ de 2021.
 
 ![](resultados_files/figure-gfm/novosCasosParelhas2020-1.png)<!-- -->
 
-Podemos notar por meio do gráfico que houve um pico de novos casos
-próximo ao fim do ano de 2020. Abaixo temos o gráfico de 2021.
+Podemos notar, por meio do gráfico, que houve um pico de novos casos
+próximo ao fim do ano de 2020. Abaixo, temos o gráfico de 2021.
 
 > Gráfico 05: Novos casos durante o ano de 2021 em Parelhas/RN
 
@@ -62,11 +62,11 @@ próximo ao fim do ano de 2020. Abaixo temos o gráfico de 2021.
 
 ## Recorte sobre os meses de Fevereiro e Março de 2021
 
-Pode-se ver nos gráficos a seguir os dados referentes a novos casos nos
-meses de Fevereiro e Março de 2021.
+Pode-se ver, nos gráficos a seguir, os dados referentes a novos casos
+nos meses de Fevereiro e Março de 2021.
 
 No gráfico a seguir, referente a Fevereiro, podemos notar um grande pico
-de novos casos aproximadamente no meio do mês.
+de novos casos, aproximadamente no meio do mês.
 
 > Gráfico 06: Novos casos durante o mês de Fevereiro de 2021 em
 > Parelhas/RN
@@ -81,10 +81,10 @@ dia.
 
 ![](resultados_files/figure-gfm/paasMarco21-1.png)<!-- -->
 
-Junto com a crescente de novos casos registrado ocorreu também o aumento
-de óbitos, durante o ano de 2021 podemos ver, por meio do gráfico
-abaixo, que em sua grande maioria os óbitos se concentraram no mês de
-Março.
+Junto com a crescente de novos casos registrado, ocorreu também o
+aumento de óbitos durante o ano de 2021. Podemos ver, por meio do
+gráfico abaixo, que em sua grande maioria, os óbitos se concentraram no
+mês de Março.
 
 > Gráfico 08: Novos óbitos de 01/01 a 03/04 de 2021 em Parelhas/RN
 
@@ -100,9 +100,9 @@ referente aos novos óbitos no município de parelhas.
 ## Nível Nacional
 
 Observando o gráfico abaixo, podemos ver a frequência de novos casos de
-COVID-19 em todo o território brasileiro, e notar, que não só Parelhas
+COVID-19 em todo o território brasileiro, e notar que não só Parelhas
 enfrenta uma nova onda de contaminações como todo o país. Podemos notar
-também, que como em Parelhas, a nova onda é maior que a anterior.
+também que, como em Parelhas, a nova onda é maior que a anterior.
 
 > Gráfico 10: Novos casos no Brasil desde o início da pandemia do
 > COVID-19 no país até a data de 03/04/2021
