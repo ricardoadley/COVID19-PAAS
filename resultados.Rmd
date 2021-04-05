@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Sobre os resultados
 
 Durante esta analise serão exibidos os graficos referentes aos novos casos e mortes, casos totais e mortes totais ocorridos no municipio de Parelhas/RN em decorrência do COVID-19. Havera enfase no mês de março de 2021 onde houve um grande crescimento de ocorrencias bem como no inicio do ano de 2021.
+
 ### Sobre a fonte dos dados
 
 Todos os dados utilizados foram obtidos do repositorio [Covid19br](https://github.com/wcota/covid19br), o repositorio reune dados das Secretarias Estaduais de Saúde e do Ministerio da Saúde.
@@ -67,5 +68,14 @@ A seguir temos o grafico dos casos acumulados ao longo de todo o periodo de pand
 ggplot(covidPAAS,aes(x=date,y=totalCases)) + geom_bar(stat = "identity")
 ```
 
-Figura 01: Grafico de casos acumulados durante o periodo de pandemia em Parelhas/RN
+> Figura 01: Grafico de casos acumulados durante o periodo de pandemia em Parelhas/RN
+
+O proximo grafico exibe a frequencia de novos casos no municipio de parelhas durante todo o periodo da pandemia ate 03/04/2021.
+```{r covidPAAS, echo=FALSE}
+ggplot(covidPAAS,aes(x=date,y=newCases)) + geom_line()
+```
+
+> Figura 02: Grafico de novos casos durante o periodo da pandemia em Parelhas/RN
+
+
 
