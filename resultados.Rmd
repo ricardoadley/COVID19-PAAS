@@ -103,7 +103,7 @@ Podemos notar, por meio do gráfico, que houve um pico de novos casos próximo a
 > Gráfico 05: Novos casos durante o ano de 2021 em Parelhas/RN
 
 
-```{r covidPAAS2021, echo=FALSE}
+```{r NovosCasoscovidPAAS2021, echo=FALSE}
 ggplot(covidPAAS2021,aes(x=date,y=newCases)) +geom_line()
 ```
 
@@ -117,7 +117,7 @@ No gráfico a seguir, referente a Fevereiro, podemos notar um grande pico de nov
 > Gráfico 06: Novos casos durante o mês de Fevereiro de 2021 em Parelhas/RN
 
 
-```{r passfev21, echo=FALSE}
+```{r NovosCasospassfev21, echo=FALSE}
 ggplot(paasfev21, aes(x =date,y= newCases)) + geom_line()
 ```
 
@@ -127,7 +127,7 @@ Já no gráfico a seguir, referente a Março de 2021, podemos notar uma frequên
 > Gráfico 07: Novos casos durante o mês de Março de 2021 em Parelhas/RN
 
 
-```{r paasMarco21,echo=FALSE}
+```{r NovosCasospaasMarco21,echo=FALSE}
 ggplot(paasMarco21, aes(x =date,y= newCases)) + geom_line()
 ```
 
@@ -137,7 +137,7 @@ Junto com a crescente de novos casos registrado, ocorreu também o aumento de ó
 > Gráfico 08: Novos óbitos de 01/01 a 03/04 de 2021 em Parelhas/RN
 
 
-```{r covidPAAS202102,echo=FALSE}
+```{r NovosObitosCovidPaas21,echo=FALSE}
 ggplot(covidPAAS2021,aes(x=date,y=newDeaths)) + geom_line()
 ```
 
@@ -146,7 +146,7 @@ No gráfico a seguir podemos ver um recorte apenas do mês de março referente a
 
 > Gráfico 09: Novos óbitos durante o mês de Março de 2021 em Parelhas/RN
 
-```{r paasMarco2102,echo=FALSE}
+```{r NovosObtosCovidPaas21,echo=FALSE}
 ggplot(paasMarco21, aes(x = date,y = newDeaths)) + geom_line()
 ```
 

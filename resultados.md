@@ -58,7 +58,7 @@ próximo ao fim do ano de 2020. Abaixo, temos o gráfico de 2021.
 
 > Gráfico 05: Novos casos durante o ano de 2021 em Parelhas/RN
 
-![](resultados_files/figure-gfm/covidPAAS2021-1.png)<!-- -->
+![](resultados_files/figure-gfm/NovosCasoscovidPAAS2021-1.png)<!-- -->
 
 ## Recorte sobre os meses de Fevereiro e Março de 2021
 
@@ -71,7 +71,7 @@ de novos casos, aproximadamente no meio do mês.
 > Gráfico 06: Novos casos durante o mês de Fevereiro de 2021 em
 > Parelhas/RN
 
-![](resultados_files/figure-gfm/passfev21-1.png)<!-- -->
+![](resultados_files/figure-gfm/NovosCasospassfev21-1.png)<!-- -->
 
 Já no gráfico a seguir, referente a Março de 2021, podemos notar uma
 frequência de novos casos bem como uma ocorrência maior de casos por
@@ -79,7 +79,7 @@ dia.
 
 > Gráfico 07: Novos casos durante o mês de Março de 2021 em Parelhas/RN
 
-![](resultados_files/figure-gfm/paasMarco21-1.png)<!-- -->
+![](resultados_files/figure-gfm/NovosCasospaasMarco21-1.png)<!-- -->
 
 Junto com a crescente de novos casos registrado, ocorreu também o
 aumento de óbitos durante o ano de 2021. Podemos ver, por meio do
@@ -88,14 +88,14 @@ mês de Março.
 
 > Gráfico 08: Novos óbitos de 01/01 a 03/04 de 2021 em Parelhas/RN
 
-![](resultados_files/figure-gfm/covidPAAS202102-1.png)<!-- -->
+![](resultados_files/figure-gfm/NovosObitosCovidPaas21-1.png)<!-- -->
 
 No gráfico a seguir podemos ver um recorte apenas do mês de março
 referente aos novos óbitos no município de parelhas.
 
 > Gráfico 09: Novos óbitos durante o mês de Março de 2021 em Parelhas/RN
 
-![](resultados_files/figure-gfm/paasMarco2102-1.png)<!-- -->
+![](resultados_files/figure-gfm/NovosObtosCovidPaas21-1.png)<!-- -->
 
 ## Nível Nacional
 
